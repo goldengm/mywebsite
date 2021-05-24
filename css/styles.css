@@ -606,6 +606,9 @@ a {
 }
 
 /*** Contact ***/
+.contact__us{
+  color: white;
+}
 .contact {
   padding: 0 0 3em;
   background-color: #e48209;

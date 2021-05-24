@@ -1,0 +1,20 @@
+.contact {
+    text-align: center;
+  }
+  .contact__description {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+  }
+  .contact__link {
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    transition: all 0.1s linear;
+    color: #fff;
+  }

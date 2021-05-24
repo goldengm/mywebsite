@@ -3,469 +3,226 @@
 
 <head>
   <meta charset="utf-8">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=10; IE=11; IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Full Stack Web Developer portfolio website.">
-  <meta name="author" content="Schmid Payen">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Schmid Payen | Full Stack Web Developer Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
+  <!-- Favicons -->
   <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" /><!-- Favicon -->
   <link rel="icon" href="images/icon.ico" type="image/x-icon" /><!-- Favicon -->
 
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" /><!-- reset for browsers -->
-  <link rel="stylesheet" media="screen" href="css/font-awesome.min.css" /><!-- font-awesome icons stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" /><!-- main stylesheet -->
-  <link rel="stylesheet" media="screen" href="css/animations.css" /><!-- animations stylesheet -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <link rel="stylesheet" media="screen and (max-width: 340px)" href="css/media_extra_small.css" />
-  <!-- mobile stylesheet -->
-  <link rel="stylesheet" media="screen and (min-width: 340px) and (max-width: 480px)" href="css/media_small.css" />
-  <!-- mobile stylesheet -->
-  <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 1023px)" href="css/media_medium.css" />
-  <!-- mobile stylesheet -->
-  <link rel="stylesheet" media="screen and (min-width: 1024px) and (max-width: 1100px)" href="css/media_large.css" />
-  <!-- mobile stylesheet -->
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
-  <!-- custom typeface -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet"><!-- custom typeface -->
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="mystyle.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+  <script src="js/portfolio.js"></script>
+ 
+   <!-- SWEET ALERT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
 
 </head>
 
-<body id="body-index">
-  <!-- Navigation -->
-  <nav class="nav">
-    <a href="#header" class="nav__logo__link"><img class="nav__logo" src="images/logo.svg" alt="logo"></a>
-    <span class="hamburger__name">menu</span>
-    <svg width="35px" height="35px" class="nav__hamburger">
-      <path d="M 5 5 L 33 5" class="hamburger"></path>
-      <path d="M 5 15 L 33 15" class="hamburger"></path>
-      <path d="M 5 25 L 33 25" class="hamburger"></path>
-    </svg>
-  </nav>
-  <div class="nav-menu">
-    <div class="nav-menu__cross">
-      <svg width="43px" height="35px">
-        <path d="M 5 5 L 30 29" class="nav-menu__cross-line"></path>
-        <path d="M 5 29 L 30 5" class="nav-menu__cross-line"></path>
-      </svg>
-    </div>
-    <ul class="nav-menu__list">
-      <li class="nav-menu__list-item">
-        <a href="#header" class="nav-menu__link">Home</a>
-      </li>
-      <li class="nav-menu__list-item">
-        <a href="#about" class="nav-menu__link">About</a>
-      </li>
-      <li class="nav-menu__list-item">
-        <a href="#portfolio" class="nav-menu__link">Portfolio</a>
-      </li>
-      <li class="nav-menu__list-item">
-        <a href="#contact" class="nav-menu__link">Contact</a>
-      </li>
-    </ul>
-    <hr class="nav-menu__separator">
-    <p class="nav-menu__text">Schmid Payen is a Full Stack Web Developer based in New York, USA.</p>
-    <p class="nav-menu__email">
-      <a href="mailto:schmid@magehire.com" class="nav-menu__link--email">schmid@magehire.com</a>
-    </p>
-    <div class="nav-menu__social-btn">
-      <a href="https://www.facebook.com/schmid.payen" target="_blank"><span class="fa fa-facebook fa-2x"></span></a>
-      <a href="https://twitter.com/schmid_payen" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>      
-      <a href="mailto:schmid@magehire.com" target="_blank"><span class="fa fa-google fa-2x"></span></a>
-      <a href="https://github.com/leokokko" target="_blank"><span class="fa fa-github fa-2x"></span></a>
-      <!-- <a href="https://codepen.io/themalni" target="_blank"><span class="fa fa-codepen fa-2x"></span></a>
-      <a href="https://github.com/Themalni" target="_blank"><span class="fa fa-github fa-2x"></span></a>
-      <a href="https://youtube.com/user/TheMalni" target="_blank"><span class="fa fa-youtube fa-2x"></span></a>
-      <a href="https://www.linkedin.com/in/dina-blaszczak-5b380313a/" target="_blank"><span
-          class="fa fa-linkedin-square fa-2x"></span></a> -->
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:schmid@magehire.com">schmid@magehire.com</a>
+      </div>
+      <div class="social-links">
+        <a href="" target="_blank"><span class="fa fa-facebook fa-2x"></span></a>
+      <a href="" target="_blank"><span class="fa fa-github fa-2x"></span></a>
+
+        <a href="mailto:schmid@magehire.com/" class="twitter" target="_blank"><i class="icofont-envelope"></i></a>
+        <a href="https://twitter.com/schmid_payen/" class="twitter" target="_blank"><i class="icofont-twitter"></i></a>
+        <a href="https://www.facebook.com/schmid.payen/" class="facebook" target="_blank"><i class="icofont-facebook"></i></a>
+        <a href="https://github.com/goldengm/" class="github" target="_blank"><i class="icofont-github"></i></a>
+        <a href="skype:schmid.payen" class="skype"><i class="icofont-skype" target="_blank"></i></a>
+      </div>
     </div>
   </div>
-  <!-- Header -->
-  <header id="header" class="header">
-    <h1 class="header__title">Schmid Payen</h1>
-    <h3 class="header__subtitle">Full Stack Web Developer</h3>
-    <a href="#portfolio" class="header__btn">View portfolio</a>
-    <div class="header__mouse__container">
-      <img class="header__mouse" src="images/mouse_full.svg" alt="mouse">
-      <img class="header__mouse__roll" src="images/mouse_roll.svg" alt="mouse">
-      <h4 class="header__mouse__text">scroll</h4>
-    </div>
-  </header>
-  <!-- Main content -->
-  <main class="main-container">
-    <!-- About -->
-    <section id="about" class="about">
-      <h1 class="about__title">Get to know me<span class="about__title__dot"></span></h1>
-      <div class="about__info__container">
-        <div class="about__text">
-          <img src="images/SchmidPayen_large.jpg" srcset="images/schmid_small.jpg 800w,
-                        images/schmid_medium.jpg 1100w,
-                        images/SchmidPayen_large.jpg 1400w" sizes="100vw" class="about__img__mobile" alt="autor portrait" />
-          <p class="about__text__description">Hello, my name is Schmid Payen. I am a Full Stack Web Developer located in New York, USA.</p>
-          <p class="about__text__description">I’m highly passionate when it comes to learning all sorts of things. That’s what keeps me going in life.
-            I look at coding as a never-ending challenge, and I won’t slow down until I feel like I achieved a level of mastery. Then the real fun begins. Until that moment, it’s all about self-discipline, continuous learning, and tremendous patience. I, in one word: “DRIVEN”
-            </p>
-          <!-- <a href="about-me.html" class="about__btn">Learn more</a> -->
-          
-        </div>
-        <div class="about__img__container">
-          <img src="images/SchmidPayen_large.jpg" srcset="images/schmid_small.jpg 800w,
-                        images/schmid_medium.jpg 1100w,
-                        images/SchmidPayen_large.jpg 1400w" sizes="100vw" class="about__img" alt="autor portrait" />
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-      <h1 class="portfolio__title">Portfolio<span class="portfolio__title__dot"></span></h1>
-      <h3 class="portfolio__description">Examples of my latest projects build with Advanced Cutting Edge Frameworks and Technologies.
-        <br/>It includes Angular.js,  Node.js, React.js, Vue.js, Laravel, WordPress and eCommerce Website like magento.</h3>
-      <div class="portfolio__nav__container">
-        <button class="portfolio__nav__btn" data-btn-name="all-btn">All</button>
-        <button class="portfolio__nav__btn" data-btn-name="app-btn">JS & PHP</button>        
-        <button class="portfolio__nav__btn" data-btn-name="wordpress-btn">WordPress</button>
-        <button class="portfolio__nav__btn" data-btn-name="ecommerce-btn">eCommerce</button>
-        <!-- <button class="portfolio__nav__btn" data-btn-name="apps-btn">Mobile</button> -->
-      </div>
-      <div class="portfolio__items-container">
-        <div class="portfolio__item" data-name="app">
-          <a href="brightergy.html">
-            <img src="images/jap.jpg" class="portfolio__item__thumbnail" alt="image hover effects">
-            <h2 class="portfolio__item__info">Brighterlink Dashboard</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Angular.js + Node.js<span
-                  class="portfolio__title__dot title__dot--white"></span>
-              </h2>
-              <p class="portfolio__item__hover__description">Visualization Dashboard for Solar Energy Consumption</p>
-            </div>
-          </a>
-        </div><!-- END portfolio__item -->
-        <div class="portfolio__item" data-name="ecommerce">
-          <a href="https://www.usamilitarymedals.com/" target="_blank">
-            <img src="images/react_reddit.jpg" class="portfolio__item__thumbnail" alt="image hover effects">
-            <h2 class="portfolio__item__info">eCommerce Website</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Magento<span
-                  class="portfolio__title__dot title__dot--white"></span>
-              </h2>
-              <p class="portfolio__item__hover__description">USAMM is the #1 official full-service destination for military medals.</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="app">
-          <a href="https://www.discountflights.com/">
-            <img src="images/discountflights.jpg" class="portfolio__item__thumbnail" alt="fun facts">
-            <h2 class="portfolio__item__info">Airline Ticket Reservation</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">React.js + Laravel<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Cheap Flights &amp; Airline Tickets for Your Trip | Discount Flights</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="ecommerce">
-          <a href="image-hover-effects.html"> 
-            <img src="images/oco.jpg" class="portfolio__item__thumbnail" alt="image hover effects">
-            <h2 class="portfolio__item__info">eCommerce Website</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Magento<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Contemporary fashion meets exceptional eye-care, online and at our Spitalfields Optical boutique.</p>
-            </div>
-          </a>
-        </div><!-- END portfolio__item -->
-        <div class="portfolio__item" data-name="app">
-          <a href="https://schoolhire.co.uk/">
-            <img src="images/schoolhire.jpg" class="portfolio__item__thumbnail" alt="fun facts">
-            <h2 class="portfolio__item__info">Faculty Booking Services</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Ruby + Angular.js<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">SchoolHire advertises facilities across the UK that are available for hire.</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="wordpress">
-          <a href="vue-career-page.html">
-            <img src="images/accf.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">Medical Services</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title" style="font-size:30px;">WordPress,WooCommerce
-                <span class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">ACCF provides prevention, treatment and support information in Australia.</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="app">
-          <a href="https://familytraveller.com">
-            <img src="images/family.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">Family Travelling Social Site</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Zend Framework<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Find and book unforgettable family holidays</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="app">
-          <a href="https://www.hireanartist.co/">
-            <img src="images/hireanartist.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">Post & Hire Talent Service</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Laravel<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">From student with an idea to one of the UK’s Top 15 start-ups!</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="wordpress">
-          <a href="https://escapeadventures.com/">
-            <img src="images/escapeadventure.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">Adventure Travelling Social</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">WordPress<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Most Adventure Travelling Social Website in the world. </p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="app">
-          <a href="https://www.davidmauschevrolet.com/">
-            <img src="images/davidmaus.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">Car Selling Services</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">React.js<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">David Maus Chevy has provided drivers with award-winning vehicles AND award-winning customer service!</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="ecommerce">
-          <a href="https://ifineedhelp.org/">
-            <img src="images/ifineedhelp.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">eCommerce Website</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Zend Framework<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Using QR Code Technology that can be accessed by computer or cell phone to provide help.</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="app">
-          <a href="https://www.searchgurbani.com/">
-            <img src="images/searchgurbani.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">Instant Gurubani Search</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">CodeIgniter<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">A comprehensive web site on research and exploration of Sri Guru Granth Sahib.</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="app">
-          <a href="https://www.betting-forum.com/">
-            <img src="images/betting.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">Betting Forum</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">PHP + MySQL<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Friendly community of people that love to bet and discuss everything related to gambling and even outside that topic</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="app">
-          <a href="http://www.blackblanc.co.uk/">
-            <img src="images/realestate.jpg" class="portfolio__item__thumbnail" alt="career page">
-            <h2 class="portfolio__item__info">Real Estate Properties</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Laravel<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Providing Buying and Renting Real Estate Services in UK</p>
-            </div>
-          </a>
-        </div>
-        <!-- END portfolio__item -->
-        <!-- <div class="portfolio__item" data-name="app">
-          <a href="fun-facts-app.html">
-            <img src="images/fun_facts.jpg" class="portfolio__item__thumbnail" alt="fun facts">
-            <h2 class="portfolio__item__info">Fun Facts About Coding</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Web App<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Little app to display coding related facts.</p>
-            </div>
-          </a>
-        </div> -->
-        <!-- END portfolio__item -->
-        <!-- <div class="portfolio__item" data-name="app">
-          <a href="character-limiter-app.html">
-            <img src="images/character_limiter.jpg" class="portfolio__item__thumbnail" alt="character limiter app">
-            <h2 class="portfolio__item__info">Character Limiter JS</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Web App<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Mini app to count and limit text characters made with
-                Vanilla JS.</p>
-            </div>
-          </a>
-        </div> -->
-        <!-- END portfolio__item --><!-- END portfolio__item -->
-        <!-- <div class="portfolio__item" data-name="app">
-          <a href="pomodoro-clock-app.html">
-            <img src="images/pomodoro.jpg" class="portfolio__item__thumbnail" alt="pomodoro clock">
-            <h2 class="portfolio__item__info">Pomodoro Clock</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Web App<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">App to increase study and work productivity.</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="app">
-          <a href="calculator-js-app.html">
-            <img src="images/calculator.jpg" class="portfolio__item__thumbnail" alt="calculator js app">
-            <h2 class="portfolio__item__info">Calculator JS</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Web App<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Basic calculator for simple arithmetic operations.</p>
-            </div>
-          </a>
-        </div> -->
-        <!-- END portfolio__item -->
-        <!-- <div class="portfolio__item" data-name="illustration">
-          <a href="camera-css-illustration.html">
-            <img src="images/camera.jpg" class="portfolio__item__thumbnail" alt="camera CSS illustration">
-            <h2 class="portfolio__item__info">Vintage camera</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">CSS Illustration<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Illustration made with pure CSS.</p>
-            </div>
-          </a>
-        </div> -->
-        <!-- END portfolio__item -->
-        <!-- <div class="portfolio__item" data-name="app">
-          <a href="random-quote-machine-app.html">
-            <img src="images/quote.jpg" class="portfolio__item__thumbnail" alt="random quote machine app">
-            <h2 class="portfolio__item__info">Random Quote Machine</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Web App<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">App to display random inspirational quotes.</p>
-            </div>
-          </a>
-        </div> -->
-        <!-- END portfolio__item -->
-        <!-- <div class="portfolio__item" data-name="app">
-          <a href="wikipedia-viewer-app.html">
-            <img src="images/wiki.jpg" class="portfolio__item__thumbnail" alt="wikipedia viewer app">
-            <h2 class="portfolio__item__info">Wikipedia Viewer</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">Web App<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">App to find and preview entries from Wikipedia.</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__item" data-name="illustration">
-          <a href="owl-css-illustration.html">
-            <img src="images/owl.jpg" class="portfolio__item__thumbnail" alt="owl CSS illustration">
-            <h2 class="portfolio__item__info">Cute Owl</h2>
-            <div class="portfolio__item__hover">
-              <h2 class="portfolio__item__hover__title">CSS Illustration<span
-                  class="portfolio__title__dot title__dot--white"></span></h2>
-              <p class="portfolio__item__hover__description">Illustration made with pure CSS.</p>
-            </div>
-          </a>
-        </div> -->
-        
-      </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <div class="contact__envelope">
-        <h1 class="contact__title title--white">Get in touch<span class="contact__title__dot title__dot--white"></span>
-        </h1>
-        <h2 class="contact__description">You can reach me via email or find me on social networks.<br> I would love to
-          hear from you!</h2>
-        <a class="contact__link" href="mailto:schmid@magehire.com">Schmid@magehire.com</a>
-        <div class="contact__social-btn__container">
-          <!--
-          <a href="https://twitter.com/schmid_payen" target="_blank" class="contact__btn__link">
-            <span class="fa fa-twitter fa-2x"></span>
-            <div class="contact__social-btn"></div>
-          </a>
-          <a href="https://www.facebook.com/schmid.payen" target="_blank" class="contact__btn__link">
-            <span class="fa fa-facebook fa-2x contact__fa-btn"></span>
-            <div class="contact__social-btn"></div>
-          </a>
-          
-          <a href="https://github.com/" target="_blank" class="contact__btn__link">
-            <span class="fa fa-github fa-2x contact__fa-btn"></span>
-            <div class="contact__social-btn"></div>
-          </a>
-          <a href="https://youtube.com/user/" target="_blank" class="contact__btn__link">
-            <span class="fa fa-youtube fa-2x contact__fa-btn"></span>
-            <div class="contact__social-btn"></div>
-          </a>
-          <a href="https://www.linkedin.com/in//" target="_blank" class="contact__btn__link">
-            <span class="fa fa-linkedin-square fa-2x contact__fa-btn"></span>
-            <div class="contact__social-btn"></div>
-          </a> -->
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer__info__container">
-        <h2 class="footer__copyright">&copy; Schmid Payen 2019</h2>
-        <!-- footer navigation -->
-        <ul class="footer-menu__list">
-          <li class="footer-menu__list-item">
-            <a href="#about" class="footer-menu__link">About</a>
-          </li>
-          <li class="footer-menu__list-item">
-            <a href="#portfolio" class="footer-menu__link">Portfolio</a>
-          </li>
-          <li class="footer-menu__list-item">
-            <a href="#contact" class="footer-menu__link">Contact</a>
-          </li>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <!-- <h1 class="logo mr-auto"><a href="index.html">
+         </a>
+      </h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo mr-auto"><img src="images/icon.ico" alt=""></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+
         </ul>
-        <!-- footer social buttons -->
-        <div class="footer__social-btn">
-          <a href="https://www.facebook.com/schmid.payen" target="_blank"><span class="fa fa-facebook fa-2x"></span></a>
-          <a href="https://twitter.com/schmid_payen" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>
-          <a href="mailto:schmid@magehire.com" target="_blank"><span class="fa fa-google fa-2x"></span></a>
-          <a href="https://github.com/leokokko" target="_blank"><span class="fa fa-github fa-2x"></span></a>
-          <!-- <a href="https://github.com/" target="_blank"><span class="fa fa-github fa-2x"></span></a>
-          <a href="https://youtube.com/user/" target="_blank"><span class="fa fa-youtube fa-2x"></span></a>
-          <a href="https://www.linkedin.com/" target="_blank"><span
-              class="fa fa-linkedin-square fa-2x"></span></a> -->
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1><span>SCHMID PAYEN</span>
+      </h1>
+      <h2 class="mt-3">Full Stack Web Developer</h2>
+      <div class="d-flex">
+        <a href="#portfolio" class="btn-get-started scrollto">View Portfolio</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+   
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title row w-100">
+          <div class="col-md-12">
+          <h3>GET TO KNOW ME</h3>
+          <p>
+            Hello, my name is Schmid Payen. I am a Full Stack Web Developer located in New York, USA.
+          </p>
+        </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-lg-6 text-center " data-aos="zoom-out" data-aos-delay="100" >
+            <img src="images/SchmidPayen_large.jpg" class="img-fluid " style="height:400px;">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h3>Few Credentials.</h3> -->
+          <div>
+            <p style="line-height: 40px;">
+              I’m highly passionate when it comes to learning all sorts of things. That’s what keeps me going in life. I look at coding as a never-ending challenge, and I won’t slow down until I feel like I achieved a level of mastery. Then the real fun begins. Until that moment, it’s all about self-discipline, continuous learning, and tremendous patience. I, in one word: “DRIVEN”
+            </p>
+          </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio nav__logo__link">
+      <div class="container-fluid p-0">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-10 text-center">
+                      <h2 class="mt-3">PORTFOLIO</h2>
+                      <hr class="divider my-4" />
+                      <p class="mb-4 font-weight-bold">
+                          Here are some examples of our latest projects built with Advanced Cutting Edge Framework and Technologies: 
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="portfolio__nav__container" id="portfolio__nav__containers">
+              <button class="portfolio__nav__btn active" data-btn-name="all-btn" onclick="filterSelection('all')">All</button>
+              <button class="portfolio__nav__btn" data-btn-name="web-btn" onclick="filterSelection('app')">JS & PHP</button>        
+              <button class="portfolio__nav__btn" data-btn-name="iot-btn" onclick="filterSelection('wordpress')">WordPress</button>
+              <button class="portfolio__nav__btn" data-btn-name="android-btn" onclick="filterSelection('ecommerce')">eCommerce</button>
+              <button class="portfolio__nav__btn" data-btn-name="android-btn" onclick="filterSelection('python')">Python</button>
+            </div>
+          
+            <div class="portfolio__items-container">
+              
+      
+              
+            </div>  
+      </div>
+  </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="contact__us" style="color:white;">
+          <h1 class="contact__title title--white">Get in touch<span class="contact__title__dot title__dot--white"></span>
+          </h1>
+          <h2 class="contact__description">You can reach me via email or find me on social networks.<br> I would love to
+            hear from you!</h2>
+          <a class="contact__link" href="mailto:schmid@magehire.com">Schmid@magehire.com</a>  
         </div>
       </div>
-    </footer>
+    </section> 
+    <!-- End Contact Section -->
+
   </main>
+  <!-- End #main -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jQuery -->
-  <script src="js/inert.min.js"></script>
-  <!--inert js-->
-  <script src="js/scripts.min.js"></script><!-- js scripts-->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
+          <div class="col-lg-6 col-md-6 ">
+            <div class="copyright" >
+              Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear())</script><strong><span> Schmid Payen</span></strong> All Rights Reserved
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 col-md-6 text-right" >
+            <div class="social-links ">
+              <a href="mailto:schmid@magehire.com/" class="twitter" target="_blank"><i class="icofont-envelope"></i></a>
+              <a href="https://twitter.com/schmid_payen/" class="twitter" target="_blank"><i class="icofont-twitter"></i></a>
+              <a href="https://www.facebook.com/schmid.payen/" class="facebook" target="_blank"><i class="icofont-facebook"></i></a>
+              <a href="https://github.com/goldengm/" class="github" target="_blank"><i class="icofont-github"></i></a>
+              <a href="skype:schmid.payen" class="skype"><i class="icofont-skype" target="_blank"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
   <script>
-    // (function (i, s, o, g, r, a, m) {
-    //   i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-    //     (i[r].q = i[r].q || []).push(arguments)
-    //   }, i[r].l = 1 * new Date(); a = s.createElement(o),
-    //     m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    // })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    // ga('create', 'UA-29336846-8', 'auto');
-    // ga('send', 'pageview');
-
+    $(function(){
+      $('[data-btn-name="all-btn"]').click();
+    })
   </script>
 
 </body>
